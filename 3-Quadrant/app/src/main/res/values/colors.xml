@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="quadrant_1">#FFFFDBC7</color>
+    <color name="quadrant_2">#FFFCE9E0</color>
+    <color name="quadrant_3">#FFFCE9E0</color>
+    <color name="quadrant_4">#FFFFDBC7</color>
+    <color name="quadrant_text">#FF201A17</color>
+    <color name="screen_background">#FF777777</color>
+</resources>

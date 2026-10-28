@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Business Card</string>
+    <string name="full_name">Shahd Ibrahim</string>
+    <string name="title">Android Developer</string>
+    <string name="phone">+970 599 123 456</string>
+    <string name="social">\@AndroidDev</string>
+    <string name="email">shahd.ibrahim@android.com</string>
+</resources>

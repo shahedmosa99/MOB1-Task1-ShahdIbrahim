@@ -1,0 +1,15 @@
+.gradle/
+build/
+.idea/
+*.iml
+local.properties
+.kotlin/
+captures/
+.cxx/
+.externalNativeBuild/
+hs_err_pid*.log
+replay_pid*.log
+.DS_Store
+
+# Instructor's reference screenshots (not part of the code)
+اسايمنت اندرويد/

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ScrollView lets the article scroll when it is taller than the screen -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_background"
+    tools:context=".MainActivity"
+    tools:ignore="UnusedAttribute">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg_compose_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/title_jetpack_compose_tutorial"
+            android:textColor="@color/screen_text"
+            android:textSize="24sp" />
+
+        <!-- First paragraph is justified -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/compose_short_desc"
+            android:textColor="@color/screen_text"
+            android:textSize="16sp" />
+
+        <!-- Second paragraph is aligned to the start -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:padding="16dp"
+            android:text="@string/compose_long_desc"
+            android:textColor="@color/screen_text"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>

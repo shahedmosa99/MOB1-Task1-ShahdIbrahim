@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/card_background"
+        android:orientation="vertical">
+
+        <!-- Logo, name and title, centered in the free space -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:src="@drawable/android_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/full_name"
+                android:textColor="@color/accent_green"
+                android:textSize="36sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/title"
+                android:textColor="@color/title_text"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Contact information at the bottom -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/ContactRow"
+                android:drawableStart="@drawable/ic_phone"
+                android:text="@string/phone" />
+
+            <TextView
+                style="@style/ContactRow"
+                android:drawableStart="@drawable/ic_share"
+                android:text="@string/social" />
+
+            <TextView
+                style="@style/ContactRow"
+                android:drawableStart="@drawable/ic_email"
+                android:text="@string/email" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
