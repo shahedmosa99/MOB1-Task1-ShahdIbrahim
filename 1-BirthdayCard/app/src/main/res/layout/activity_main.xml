@@ -7,19 +7,16 @@
     android:background="@color/screen_background"
     tools:context=".MainActivity">
 
-    <!-- Background image fills the screen -->
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="@null"
         android:scaleType="centerCrop"
         android:src="@drawable/androidparty" />
 
-    <!-- Darkens the image in dark mode (transparent in light mode) -->
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/card_scrim" />
+        android:background="@color/image_shadow" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,7 +30,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/happy_birthday_text"
-            android:textColor="@color/card_text"
+            android:textColor="@color/text_color"
             android:textSize="88sp" />
 
         <TextView
@@ -41,7 +38,7 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:text="@string/signature_text"
-            android:textColor="@color/signature_text"
+            android:textColor="@color/red"
             android:textSize="32sp" />
     </LinearLayout>
 </FrameLayout>

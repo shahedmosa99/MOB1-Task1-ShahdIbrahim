@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/screen_background"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    tools:ignore="UnusedAttribute">
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,29 +15,57 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            style="@style/Quadrant"
-            android:background="@color/quadrant_1">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
 
             <TextView
-                style="@style/QuadrantTitle"
-                android:text="@string/first_title" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/first_title"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
-                style="@style/QuadrantBody"
-                android:text="@string/first_description" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/first_description"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
-            style="@style/Quadrant"
-            android:background="@color/quadrant_2">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
 
             <TextView
-                style="@style/QuadrantTitle"
-                android:text="@string/second_title" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/second_title"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
-                style="@style/QuadrantBody"
-                android:text="@string/second_description" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/second_description"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -49,29 +76,57 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            style="@style/Quadrant"
-            android:background="@color/quadrant_3">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
 
             <TextView
-                style="@style/QuadrantTitle"
-                android:text="@string/third_title" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/third_title"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
-                style="@style/QuadrantBody"
-                android:text="@string/third_description" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/third_description"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
-            style="@style/Quadrant"
-            android:background="@color/quadrant_4">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_4"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
 
             <TextView
-                style="@style/QuadrantTitle"
-                android:text="@string/fourth_title" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/fourth_title"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <TextView
-                style="@style/QuadrantBody"
-                android:text="@string/fourth_description" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="@string/fourth_description"
+                android:textColor="@color/text_color"
+                android:textSize="16sp" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
